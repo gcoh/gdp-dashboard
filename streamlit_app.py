@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+
 
 # Titre de l'application
 st.title("Ma première application Streamlit")
@@ -20,8 +20,3 @@ df = pd.DataFrame({
 
 # Affichage du dataframe
 st.dataframe(df)
-
-# Création d'un graphique simple
-fig, ax = plt.subplots()
-ax.plot(df['col1'], df['col2'])
-st.pyplot(fig)
